@@ -13,7 +13,7 @@ if (document.URL.includes("index")){
 
         data.Products.forEach(product => {
             //Filter products based on category id - 0 means no filter
-            if(localStorage.getItem('ActiveFilter')!="0" && localStorage.getItem('ActiveFilter')!=product.ProductCategory.ProductCategoryId){
+            if(localStorage.getItem('ActiveFilter')!="0" && localStorage.getItem('ActiveFilter')!=product.ProductCategory.ProductCategoryId && localStorage.getItem('ActiveFilter')!==null){
                 return;
             }
             // creates document fragment from the template and adds image details
