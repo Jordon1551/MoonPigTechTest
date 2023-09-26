@@ -1,0 +1,45 @@
+.Filter-buttons{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    gap: 2rem;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5%;
+}
+.all-products{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 400px));
+    gap: 2rem;
+    margin-left: 5%;
+    margin-top: 2%;
+}
+.product:hover{
+    transform: scale(1.03);
+}
+
+.Product-Gallery{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, 1fr);
+    float: left;
+    gap: 10px;
+    padding-right: 30px;
+
+}
+
+.Product-Details{
+    font-family: "Helvetica";
+    font-size: 1.5em;
+
+}
+
+.button{
+    background-color: rgb(7, 115, 68);
+    padding: 1em 2em;
+    font-size: 1.5em;
+}
+
+.button:hover{
+    background-color: rgb(67, 167, 123);
+}
+

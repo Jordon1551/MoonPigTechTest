@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Card Details</title>
+  </head>
+  <body style="background-color: rgba(197, 59, 130, 0.8)">
+    <div product-details-container></div>
+    <!--Template for images of product as information about the product-->
+    <template product-details-template>
+      <div class="Product-Gallery">
+        <img id="" src="" alt="" gallery-image1 />
+        <img id="" src="" alt="" gallery-image2 />
+        <img id="" src="" alt="" gallery-image3 />
+        <img id="" src="" alt="" gallery-image4 />
+      </div>
+      <p class="Product-Details" title style="font-size: 2em"></p>
+      <p class="Product-Details" details></p>
+      <p class="Product-Details" price></p>
+    </template>
+
+    <!--Button to purchase and return to home screen-->
+    <button
+      class="button"
+      id="Purchase-Button"
+      type="button"
+      onclick="Purchased()"
+    >
+      Buy Me
+    </button>
+    <button
+      class="button"
+      id="Home-Button"
+      type="button"
+      onclick="ReturnHome()"
+    >
+      Home
+    </button>
+  </body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Moonpig Card Listings</title>
+  </head>
+  <body style="background-color: rgba(197, 59, 130, 0.8)">
+    <!--Buttons used to filter products shown-->
+    <div class="Filter-buttons">
+      <button class="button" id="1" type="button" onclick="Filter(this.id)">
+        Cards
+      </button>
+      <button class="button" id="10" type="button" onclick="Filter(this.id)">
+        Flowers
+      </button>
+      <button class="button" id="11" type="button" onclick="Filter(this.id)">
+        Mugs
+      </button>
+      <button class="button" id="12" type="button" onclick="Filter(this.id)">
+        Shirts
+      </button>
+      <button class="button" id="33" type="button" onclick="Filter(this.id)">
+        Letterbox Gifts
+      </button>
+      <button class="button" id="19" type="button" onclick="Filter(this.id)">
+        Food Gifts
+      </button>
+    </div>
+    <!--base template for a product-->
+    <div class="all-products" products-container></div>
+    <template product-template>
+      <div class="product">
+        <img
+          id=""
+          src=""
+          alt=""
+          product-image
+          style="max-width: 600px; width: 100%"
+          onclick="ProductDetails(this.id)"
+        />
+      </div>
+    </template>
+  </body>
+</html>
