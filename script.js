@@ -58,8 +58,12 @@ if (document.URL.includes("index")){
                     }else{
                         var Description = ProductData.Description;
                     }
-                    details.innerHTML = Description.concat("<strong><br><br>Size: </strong>", ProductData.SizeName);
-
+                    if(ProductData.SizeName==null){
+                        details.innerHTML = Description;
+                    }else{
+                        details.innerHTML = Description.concat("<strong><br><br>Size: </strong>", ProductData.SizeName);
+                    }
+                    
                     //Account for varying image sizes and numbers
                     if(ProductData.Size.Category.Id == 11){
                         image1.src = ProductData.ImageUrls[0].ImageUrl;
